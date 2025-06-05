@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="96x96" />
+
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Flip the coin</title>
+  </head>
+  <body>
+    <div class="appContainer">
+      <header class="header">
+        <h1>Flip the coin</h1>
+        <h2>Press the coin or the button to flip the coin</h2>
+      </header>
+      <div id="app" class="appWrapper">
+        <div class="coinWrapper">
+          <button id="spinButton" class="coinButton">
+            <img
+              id="resultPhoto"
+              class="coinPhoto"
+              src="/heads.svg"
+              alt="heads or tails coin photo"
+            />
+          </button>
+          <img
+            class="coinShadow"
+            aria-disabled="true"
+            src="/shadow.svg"
+            alt="shadow of the coin"
+          />
+        </div>
+        <p id="resultText" class="coinText">Heads</p>
+        <button id="spinButton" class="button">Random</button>
+      </div>
+      <footer class="author-info">
+        Coded by
+        <a href="https://github.com/AcePeQ/flip-the-coin-project"
+          >Maciej Nojszewski (AcePeQ)</a
+        >
+        | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+          >devChallenges.io</a
+        >.
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

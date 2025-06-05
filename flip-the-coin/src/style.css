@@ -1,0 +1,168 @@
+:root {
+  --color-white: #ecedf0;
+  --color-black: #35383f;
+
+  --color-blue-1: #1f6fb0;
+  --color-navy-blue-1: #404a65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  color: var(--color-white);
+  background-color: var(--color-navy-blue-1);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  font-weight: 600;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.appContainer {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.header {
+  text-align: center;
+  margin: 4rem 0 6rem;
+  padding-inline: 1rem;
+
+  h1 {
+    font-size: 6.4rem;
+    text-shadow: 2px 2px 0px var(--color-black);
+    -webkit-text-stroke: 5px;
+    -webkit-text-stroke-color: var(--color-black);
+
+    letter-spacing: 2px;
+
+    font-weight: 900;
+    line-height: 1.2;
+
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 4rem;
+}
+
+.coinButton {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.coinShadow {
+  margin-top: 3.5rem;
+  margin-inline: auto;
+}
+
+.coinText {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.button {
+  font-size: 2.4rem;
+  color: var(--color-white);
+  background-color: var(--color-blue-1);
+  border: none;
+  border-radius: 1.2rem;
+
+  padding: 0.75rem 3rem;
+
+  box-shadow: 0px 4px 0px 0px var(--color-blue-1);
+
+  cursor: pointer;
+
+  transition: all 0.4s;
+}
+
+.button:hover {
+  background-color: var(--color-black);
+  box-shadow: 0px 4px 0px 0px var(--color-black);
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
